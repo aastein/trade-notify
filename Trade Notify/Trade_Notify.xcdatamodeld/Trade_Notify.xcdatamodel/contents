@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15E65" minimumToolsVersion="Automatic">
+    <entity name="HistDataCore" syncable="YES">
+        <attribute name="adjClose" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="close" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="high" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="low" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="open" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="stockName" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="volume" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="IndDataCore" syncable="YES">
+        <attribute name="avgDown" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="avgUp" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="cci" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="d" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="down" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="k" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="pt" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="rs" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="rsi" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="stoch" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="stockName" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="up" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="StockCore" syncable="YES">
+        <attribute name="ask" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="bid" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="change" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="fourOfour" optional="YES" attributeType="Boolean" indexed="YES" syncable="YES"/>
+        <attribute name="listID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="pChange" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="strategy" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="StrategyCore" syncable="YES">
+        <attribute name="cciLength" optional="YES" attributeType="Integer 16" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="cciMax" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="cciMin" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="d" optional="YES" attributeType="Integer 16" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="k" optional="YES" attributeType="Integer 16" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="rsiLength" optional="YES" attributeType="Integer 16" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="rsiMax" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="rsiMin" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="stochLength" optional="YES" attributeType="Integer 16" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="stochMax" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="stochMin" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="HistDataCore" positionX="-63" positionY="-18" width="128" height="165"/>
+        <element name="IndDataCore" positionX="-36" positionY="63" width="128" height="240"/>
+        <element name="StockCore" positionX="-54" positionY="54" width="128" height="195"/>
+        <element name="StrategyCore" positionX="-18" positionY="144" width="128" height="225"/>
+    </elements>
+</model>

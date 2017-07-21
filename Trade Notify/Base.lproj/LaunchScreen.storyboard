@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo1024.png" translatesAutoresizingMaskIntoConstraints="NO" id="DO5-LG-1Ag">
+                                <rect key="frame" x="20" y="40" width="560" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="kr2-xV-7Vy"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.038179210099999999" green="0.04395517677" blue="0.040556373030000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.038179210099999999" green="0.04395517677" blue="0.040556373030000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="DO5-LG-1Ag" secondAttribute="trailing" id="86z-ur-uWh"/>
+                            <constraint firstItem="DO5-LG-1Ag" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="HoA-ny-3Ci"/>
+                            <constraint firstItem="DO5-LG-1Ag" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="20" id="lkm-90-NGf"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="DO5-LG-1Ag" secondAttribute="bottom" constant="205" id="tIU-KJ-4n7"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="DO5-LG-1Ag" secondAttribute="leading" id="v3c-mV-b2H"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="tIU-KJ-4n7"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo1024.png" width="1024" height="1024"/>
+    </resources>
+</document>
